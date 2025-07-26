@@ -6,7 +6,10 @@
     "category": "Sales",
     "summary": "Produs cu lungime variabila, suprafata si pret calculat automat în ofertare.",
     "depends": ["sale", "product"],
-    "data": [],
+    "data": [
+    "views/product_template_view.xml"
+],
+
     "installable": True,
     "auto_install": False
 }
