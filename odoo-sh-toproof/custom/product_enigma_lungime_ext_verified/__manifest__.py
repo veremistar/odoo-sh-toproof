@@ -1,10 +1,10 @@
 {
-    "name": "Product Enigma Lungime Variabila",
-    "version": "1.3",
+    "name": "Product Enigma Lungime Variabila - Extins",
+    "version": "1.2",
     "author": "Toproof / Emil Sterea",
     "license": "LGPL-3",
     "category": "Sales",
-    "summary": "Produs cu lungime variabila, latime fixa 1.176m si pret calculat automat in functie de lungime.",
+    "summary": "Produs cu lungime variabilă, suprafață și preț calculat automat în ofertare.",
     "depends": ["sale", "product"],
     "data": [
         "views/product_template_view.xml"
