@@ -1,5 +1,5 @@
 {
-"name":"Product Enigma Lungime Variabila Extins",
+"name":"Product_Enigma_Lungime_Variabila_Extins",
 "version":"1.2",
 "author":"Toproof Emil Sterea",
 "license":"LGPL-3",
