@@ -9,4 +9,4 @@ class SaleOrderLine(models.Model):
     def _onchange_lungime_m(self):
         if self.product_id and self.lungime_m and self.product_id.list_price:
             # latime fixa: 1.176
-            self.price_unit = self.lungime_m * 1.176 * self.product_id.list_price * self.product_uom_qty
+            self.price_unit = self.lungime_m * 1.176 * self.product_id.list_price
