@@ -1,5 +1,5 @@
 {
-    "name": "Product Enigma Lungime Variabila - Verified",
+    "name": "Product Enigma Lungime Variabila",
     "version": "1.3",
     "author": "Toproof / Emil Sterea",
     "license": "LGPL-3",
