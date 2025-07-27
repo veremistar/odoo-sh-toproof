@@ -6,7 +6,7 @@
 "category":"Sales",
 "summary":"Produs Enigma cu lungime variabila",
 "depends":["sale","product"],
-"data":["/views/product_template_view.xml"],
+"data":["views/product_template_view.xml"],
 "installable":True,
 "auto_install":False
 }
