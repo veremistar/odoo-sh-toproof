@@ -1,0 +1,41 @@
+<odoo>
+    <record id="view_product_quotation_form" model="ir.ui.view">
+        <field name="name">product.quotation.form</field>
+        <field name="model">product.quotation</field>
+        <field name="arch" type="xml">
+            <form string="Product Quotation">
+                <sheet>
+                    <group>
+                        <field name="name"/>
+                        <field name="length"/>
+                        <field name="quantity"/>
+                        <field name="price_per_sqm"/>
+                        <field name="currency_id"/>
+                        <field name="total_price" readonly="1"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+    <record id="view_product_quotation_tree" model="ir.ui.view">
+        <field name="name">product.quotation.tree</field>
+        <field name="model">product.quotation</field>
+        <field name="arch" type="xml">
+            <tree string="Product Quotations">
+                <field name="name"/>
+                <field name="length"/>
+                <field name="quantity"/>
+                <field name="price_per_sqm"/>
+                <field name="currency_id"/>
+                <field name="total_price"/>
+            </tree>
+        </field>
+    </record>
+    <record id="action_product_quotation" model="ir.actions.act_window">
+        <field name="name">Product Quotations</field>
+        <field name="res_model">product.quotation</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+    <menuitem id="menu_product_quotation_root" name="Product Quotations"/>
+    <menuitem id="menu_product_quotation" name="Quotations" parent="menu_product_quotation_root" action="action_product_quotation"/>
+</odoo>
