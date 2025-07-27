@@ -1,16 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <odoo>
-    <record id="view_product_template_enigma_dummy" model="ir.ui.view">
-        <field name="name">product.template.enigma.dummy</field>
-        <field name="model">product.template</field>
-        <field name="arch" type="xml">
-            <form string="Product Template">
-                <sheet>
-                    <group>
-                        <label string="Enigma Dummy View Loaded" />
-                    </group>
-                </sheet>
-            </form>
-        </field>
-    </record>
+  <record id="view_product_template_form_enigma_lungime" model="ir.ui.view">
+    <field name="name">product.template.form.enigma.lungime</field>
+    <field name="model">product.template</field>
+    <field name="inherit_id" ref="product.product_template_only_form_view"/>
+    <field name="arch" type="xml">
+      <xpath expr="//field[@name='list_price']" position="before">
+        <field name="x_lungime_metri"/>
+        <field name="x_latime_fixa"/>
+        <field name="x_pret_pe_m2"/>
+      </xpath>
+    </field>
+  </record>
 </odoo>
