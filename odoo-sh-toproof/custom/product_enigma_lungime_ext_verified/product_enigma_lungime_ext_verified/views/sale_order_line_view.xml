@@ -1,0 +1,12 @@
+<odoo>
+  <record id="view_order_form_inherit_lungime" model="ir.ui.view">
+    <field name="name">sale.order.line.lungime</field>
+    <field name="model">sale.order.line</field>
+    <field name="inherit_id" ref="sale.view_order_form"/>
+    <field name="arch" type="xml">
+      <xpath expr="//field[@name='order_line']/form//field[@name='product_uom_qty']" position="after">
+        <field name="lungime_m"/>
+      </xpath>
+    </field>
+  </record>
+</odoo>
